@@ -11,7 +11,7 @@ For outline2dita v1.0 you need:
 
 ## Initial setup
 
-Unzip the outline2map folder to C:/outline2map. The unzipped folder contains the following sub-folders and files:
+Unzip the outline2map folder to C:/outline2dita. The unzipped folder contains the following sub-folders and files:
 
 - *_outlines*  
     - *outline2ditamap.py*
