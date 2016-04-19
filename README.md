@@ -15,7 +15,7 @@ Unzip the outline2map folder to C:/outline2map. The unzipped folder contains the
 
 - *_outlines*  
     - *outline2ditamap.py*
-      *map-model.txt* is a sample outline. Modify this txt file. Don't change the filename. 
+      *map-model.txt* is a sample outline. 
 - *projects*  
 	- *_topic-templates*  
     		- *en*  
