@@ -1,0 +1,16 @@
+﻿language=en
+projects repository=C:\outline2dita\projects\
+project folder name=your_project
+This is my first overview topic  ##c_ov
+	Operating the enterprise ##c_ov
+		Shifting to warp ##t
+		The gears ##r
+		Liability ##c
+	Product overview ##c_ov
+		System requirements ##r
+		Support ##r
+Installing the product ##t_ov
+	Installing the server ##t
+	Installing the clients ##t
+    Imprint ##c
+Glossary ##r

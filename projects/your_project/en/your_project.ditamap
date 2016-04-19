@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"> 
+<map xml:lang="en-US">
+<title>your_project</title>
+<topicref href="source/this-is-my-first-overview-topic.dita" navtitle="This is my first overview topic" format="dita" type="concept">
+<topicref href="source/operating-the-enterprise.dita" navtitle="Operating the enterprise" format="dita" type="concept">
+<topicref href="source/shifting-to-warp.dita" navtitle="Shifting to warp" format="dita"  type="task"/>
+<topicref href="source/the-gears.dita" navtitle="The gears" format="dita"  type="reference"/>
+<topicref href="source/liability.dita" navtitle="Liability" format="dita" type="concept"/></topicref>
+<topicref href="source/product-overview.dita" navtitle="Product overview" format="dita" type="concept">
+<topicref href="source/system-requirements.dita" navtitle="System requirements" format="dita"  type="reference"/>
+<topicref href="source/support.dita" navtitle="Support" format="dita" type="reference"/></topicref></topicref>
+<topicref href="source/installing-the-product.dita" navtitle="Installing the product" format="dita" type="task">
+<topicref href="source/installing-the-server.dita" navtitle="Installing the server" format="dita"  type="task"/>
+<topicref href="source/installing-the-clients.dita" navtitle="Installing the clients" format="dita" type="task"/></topicref>
+<topicref href="source/imprint.dita" navtitle="Imprint" format="dita"  type="concept"/>
+<topicref href="source/glossary.dita" navtitle="Glossary" format="dita" type="reference"/></map>

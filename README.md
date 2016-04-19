@@ -1,33 +1,25 @@
 # outline2dita
 Python script to generate a DITA project from a text outline
 
-Creating a DITA project structure for oXygen XML Editor, starting from a simple content outline.  
-This initial solution is using a python script. The second version (see https://github.com/mgcalo/model2dita) is using an oXygen framework and adds more features, such as keymaps, submaps and sub-folders. 
+Create a DITA project structure for oXygen XML Editor, starting from a simple content outline.
 
 ## Prerequirements
 
 For outline2dita v1.0 you need:
 * oXygen Editor (tested with v16.1, v17.1)
-* python 3
+* python 3 (tested with python 3.4.4 on windows). Make sure that you add the Python install dir to your system path.
 
 ## Initial setup
 
-Your repository structure (for example *C:/DITA/outline2dita/*) should contain the following sub-folders and files:
+Unzip the outline2map folder to C:/outline2map. The unzipped folder contains the following sub-folders and files:
 
 - *_outlines*  
-    - *convert-outline2ditamap.bat*  
     - *outline2ditamap.py*
-    - *test-project.txt*
-    - *testprojekt.txt*  
-      *test-project.txt* and *testprojekt.txt* are sample outlines.  
+      *map-model.txt* is a sample outline. Modify this txt file. Don't change the filename. 
 - *projects*  
 	- *_topic-templates*  
-    		- *de*  
     		- *en*  
     		- *stub-py-Project.xpr*  
-    - *test-project*  
-    - *test-projekt*  
-    	  *test-project* and *test-projekt* are folders with sample results.  
 
 ## Writing the content outline
 
@@ -66,21 +58,15 @@ Imprint ##c
 
 ## Creating the DITA project
 
-1. Double-click *convert-outline2ditamap.bat* to start the script.
-2. Click **Choose File** and select the outline file. For example *test-project.txt*.
-3. Click **Open** and close the script window.  
-  The script creates the stub project structure in the location you specified as `project repository` and opens the File Explorer when ready:  
-  - en  
-  - test-project.xpr  
-  The topic files are created under *en/source/*. The file name and the `title` element are assigned as given in the outline.  
-  The ditamap is created under *en* and already contains `conref` elements to the topic files.  
+1. Double-click *generate_outline.bat* to generate the files and open the output folder.
+2. The script creates the stub project structure in the C:\outline2dita\projects\ folder.
+4. Topic files are generated in *en/source/*. The file name and the `title` element are assigned as given in the outline.  
+5. The ditamap is generated in *en* and contains `conref` elements to the topic files.  
 4. Open the .xpr project in oXygen and check if the new *test-project.ditamap* is valid.
-5. Try publishing the two associated scenarios for PDF and WebHelp.
 
 ## Known issues
 
-1. The map should end with a topic on the first level (such as *Imprint*).
-  This issue will be fixed asap.
-2. [FIXED] Right-click the other language folder, if you don't need it (*de* or *en*), and click **Remove from project**.
-3. Need to implement support for special charcaters (normalize titles when used in filepaths).
+1. The map should end with a topic on the first level (such as *Imprint*). This issue will be fixed asap.
+2. Need to implement support for special characters (normalize titles when used in filepaths).
+3. If the previous output folder or any files are open, the script won't complete. Close all files and folders to regenerate the output.
  
